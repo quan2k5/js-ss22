@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=+prompt("nhập số a");
+        var b=+prompt("nhập số b");
+        var c=+prompt("nhập số c");
+        var denta=b*b-4*a*c;
+        var denta1=Math.sqrt(denta);
+        if(a==0){
+            if(b==0){
+                if(c==0){
+                    console.log("phuong trinh vo nghiem");
+                }else{
+                    console.log("phuong trinh vo so nghiem");
+                }
+            }else{
+                console.log("phuong trinh co nghiem x la",-c/b);
+            }
+        }else{
+            if(denta<0){
+                console.log("phuong trinh vo nghiem");
+            }else{
+                if(denta==0){
+                    console.log("phuong trinh co nghiem x la",-b/(2*a));
+                }else{
+                    console.log("phuong trinh co nghiem x1 la",(-b+denta1)/(2*a));
+                    console.log("phuong trinh co nghiem x2 la",(-b-denta1)/(2*a));
+                }
+            }
+        }
+    </script>
+</body>
+</html>

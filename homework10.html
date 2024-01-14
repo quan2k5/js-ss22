@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //truthy:là những giá trị chuyển đổi về boolean sẽ đc giá trị true
+       //falsy:là những giá trị chuyển đổi về boolean sẽ đc giá trị false
+       //1,1 số đối tượng đc coi như là truthy
+       //+số khác 0
+       //+chuôi ko rỗng
+       //+mảng  và đối tượng ko rỗng
+       //2,1 số đối tượng đc coi là falsy
+       //+ số 0
+       //+Nan(not a number)
+       //+null và undefined
+       //chuỗi rỗng
+       var n=+promtf("nhập 1 số bất kỳ");
+       if(isNaN(n)){
+        console.log("đây là falsy");
+       }else{
+        console.log("đây là truthy");
+       }
+    </script>
+</body>
+</html>
